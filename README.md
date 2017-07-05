@@ -7,3 +7,5 @@
 * [03 资源管理](https://github.com/steveLauwh/Effective-C-Plus-Plus/blob/master/03%20%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86.md)
 
 * [04 设计与声明](https://github.com/steveLauwh/Effective-C-Plus-Plus/blob/master/04%20%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%A3%B0%E6%98%8E.md)
+
+* [05 实现](https://github.com/steveLauwh/Effective-C-Plus-Plus/blob/master/05%20%E5%AE%9E%E7%8E%B0.md)
