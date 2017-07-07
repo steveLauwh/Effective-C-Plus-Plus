@@ -11,3 +11,5 @@
 * [05 实现](https://github.com/steveLauwh/Effective-C-Plus-Plus/blob/master/05%20%E5%AE%9E%E7%8E%B0.md)
 
 * [06 继承与面向对象设计](https://github.com/steveLauwh/Effective-C-Plus-Plus/blob/master/06%20%E7%BB%A7%E6%89%BF%E4%B8%8E%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1.md)
+
+* [07 模板与泛型编程](https://github.com/steveLauwh/Effective-C-Plus-Plus/blob/master/07%20%E6%A8%A1%E6%9D%BF%E4%B8%8E%E6%B3%9B%E5%9E%8B%E7%BC%96%E7%A8%8B.md)
