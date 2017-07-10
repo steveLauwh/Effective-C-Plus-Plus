@@ -46,3 +46,11 @@ void Base::operator delete(void* rawMemory, std::size_t size) throw()
 ```
 
 ## 条款52：写了 placement new 也要写 placement delete
+
+* 如果 operator new 接受的参数除了一定会有的那个 size_t 之外还有其他，这便是个所谓的 placement new。
+```
+void* operator new(std::size_t, void* pMemory) throw();
+```
+* 如果 operator delete 接受额外的参数，便称为 placement delete。
+* 当写一个 placement operator new，请确定也写出 placement operator delete。如果不这样做，程序可能会发生隐微而时断的内存泄漏。
+* 当声明 placement new 和 placement delete，请确定不要无意识地遮掩它们的正常版本。
