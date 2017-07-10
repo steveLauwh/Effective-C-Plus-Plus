@@ -15,3 +15,5 @@
 * [07 模板与泛型编程](https://github.com/steveLauwh/Effective-C-Plus-Plus/blob/master/07%20%E6%A8%A1%E6%9D%BF%E4%B8%8E%E6%B3%9B%E5%9E%8B%E7%BC%96%E7%A8%8B.md)
 
 * [08 定制 new 和 delete](https://github.com/steveLauwh/Effective-C-Plus-Plus/blob/master/08%20%E5%AE%9A%E5%88%B6%20new%20%E5%92%8C%20delete.md)
+
+* [09 杂项讨论](https://github.com/steveLauwh/Effective-C-Plus-Plus/blob/master/09%20%E6%9D%82%E9%A1%B9%E8%AE%A8%E8%AE%BA.md)
