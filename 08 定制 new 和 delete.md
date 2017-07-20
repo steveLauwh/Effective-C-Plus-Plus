@@ -3,7 +3,7 @@
 * STL 容器所使用的 heap 内存是由容器所拥有的分配器对象管理，不是被 new 和 delete 直接管理。
 * 设计良好的 new-handler函数必须做以下事情：让更多内存可被使用；安装另一个 new-handler；卸除 new-handler；抛出 bad_alloc的异常；不返回。
 
-```
+```cpp
 namespace std {
   typedef void (*new_handler)();
   new_handler set_new_handler(new_handler p) throw();
@@ -22,7 +22,7 @@ namespace std {
 * operator new 应该内含一个无穷循环，并在其中尝试分配内存，如果它无法满足内存需求，就该调用 new-handler。它也应该有能力处理 0
   bytes 申请。Class 专属版本则还应该处理 “比正确大小更大的错误申请”。
 
-```
+```cpp
 void* Base::operator new(std::size_t size) throw(std::bad_alloc)
 {
   if (size != sizeof(Base))
@@ -32,7 +32,7 @@ void* Base::operator new(std::size_t size) throw(std::bad_alloc)
   
 * operator delete 应该在收到 null 指针时不做任何事。Class 专属版本则还应该处理 “比正确大小更大的错误申请”。
 
-```
+```cpp
 void Base::operator delete(void* rawMemory, std::size_t size) throw()
 {
   if (rawMemory == 0) return;
@@ -48,7 +48,7 @@ void Base::operator delete(void* rawMemory, std::size_t size) throw()
 ## 条款52：写了 placement new 也要写 placement delete
 
 * 如果 operator new 接受的参数除了一定会有的那个 size_t 之外还有其他，这便是个所谓的 placement new。
-```
+```cpp
 void* operator new(std::size_t, void* pMemory) throw();
 ```
 * 如果 operator delete 接受额外的参数，便称为 placement delete。
